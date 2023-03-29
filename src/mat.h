@@ -196,6 +196,10 @@ static inline Mat4 mat4_view(Vec3 pos, Vec3 dir) {
     return world_to_view;
 }
 
+#undef near
+#undef far
+#undef aspect
+#undef fov
 static inline Mat4 mat4_projection(float near, float far, float aspect, float fov) {
 
     //                  A  right
